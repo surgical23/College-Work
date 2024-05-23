@@ -8,7 +8,7 @@ def no_minas_em(campo:list, linha:int, coluna:int) -> int:
     if campo[linha][coluna] == -1:
         soma_minas = -1
         return soma_minas
-    if linha >=1 and linha<len(campo)-1 and coluna >=1 and coluna<len(campo[0]-1):
+    if linha >=1 and linha<len(campo)-1 and coluna >=1 and coluna<len(campo[0])-1:
         for l in range(linha-1, linha+2, 1):
             for c in range(coluna-1, coluna+2, 1):
                 if campo[l][c] == -1:
